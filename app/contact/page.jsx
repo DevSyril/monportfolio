@@ -76,9 +76,21 @@ const Contact = () => {
     if (response.ok) {
       toast.success('Email envoyé avec succès !');
       setLoading(false)
+      setLastname("")
+      setFirstname("")
+      setPhoneNumber("")
+      setSubject("")
+      setMessage("")
+      setEmail("")
     } else {
       toast.error('Échec de l\'envoi de l\'email.');
       setLoading(false)
+      setLastname("")
+      setFirstname("")
+      setPhoneNumber("")
+      setSubject("")
+      setMessage("")
+      setEmail("")
     }
 
   }
